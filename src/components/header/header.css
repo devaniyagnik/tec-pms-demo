@@ -1,0 +1,75 @@
+.header-menu {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   height: 65px;
+   border-bottom: 1px solid #979797;
+ }
+ 
+ .header-right {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+ }
+ 
+ .right-menu{
+  display: flex;
+  padding: 0px 32px;
+  height: 32px;
+ }
+ .company-name {
+   margin-left: 8px;
+   font-weight: bold;
+ }
+ 
+.avatar-container {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #334155;
+  padding: 0 6px 0 10px;
+  margin-right: 10px;
+}
+.icons-container {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F5F9;
+  margin-right: 12px;
+  position: relative;
+}
+.icons-container img {
+  display: block;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid white; /* Optional: to add a white border around the dot */
+}
+.company-name {
+  font-size: 14px;
+  color: #475569;
+}
+
+.down-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #94A3B8;
+  position: relative;
+  top: 2px; /* Adjusted to vertically align with text */
+}
