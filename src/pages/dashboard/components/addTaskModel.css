@@ -1,0 +1,24 @@
+
+.status-css .ant-select-selector{
+   color: #ffffff !important;
+   background: #10B981 !important;
+   font-size: 14px !important;
+}
+
+.priority-css .ant-select-selector{
+   color: #ffffff !important;
+   background: #FFB400 !important;
+   font-size: 14px !important;
+}
+
+.tag-css .ant-select-selection-item{
+   background-color: #E1296F !important;
+   color : #fff!important
+}
+.tag-css .ant-select-selection-item .ant-select-selection-item-remove{
+   color: #fff !important;
+}
+
+.ant-tabs .ant-tabs-ink-bar{
+   background-color: #E1296F !important;
+}

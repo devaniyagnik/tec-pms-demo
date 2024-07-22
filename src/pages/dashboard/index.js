@@ -1,8 +1,16 @@
 import { Button } from 'antd'
-import React from 'react'
+import React, { useState } from 'react'
 import { SearchOutlined, PlusOutlined } from '@ant-design/icons';
 import TaskTable from '../../components/table';
+import AddTaskModal from './components/AddTaskModal';
+
 const Dashboard = () => {
+   const [isModalVisible, setIsModalVisible] = useState(true);
+
+   const closeModal = () => {
+      setIsModalVisible(false);
+    };
+
    return (
       <>
          <div>
@@ -13,7 +21,7 @@ const Dashboard = () => {
                      <SearchOutlined className='position-absolute' style={{ top: '12px', left: '10px', color: '#94A3B8' }} />
                   </div>
                   <div>
-                     <Button icon={<PlusOutlined />} style={{ background: "#E1296F", color: "#ffffff" }} iconPosition="left">
+                     <Button icon={<PlusOutlined />} style={{ background: "#E1296F", color: "#ffffff" }} iconPosition="left" onClick={() => setIsModalVisible(true)}>
                         Add Task
                      </Button>
                   </div>
@@ -74,6 +82,7 @@ const Dashboard = () => {
                <TaskTable name="In Progress"/>
             </div>
          </div>
+         <AddTaskModal visible={isModalVisible} onClose={closeModal} />
       </>
    )
 }
