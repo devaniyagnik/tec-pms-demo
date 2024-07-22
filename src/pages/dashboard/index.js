@@ -5,7 +5,7 @@ import TaskTable from '../../components/table';
 import AddTaskModal from './components/AddTaskModal';
 
 const Dashboard = () => {
-   const [isModalVisible, setIsModalVisible] = useState(true);
+   const [isModalVisible, setIsModalVisible] = useState(false);
 
    const closeModal = () => {
       setIsModalVisible(false);

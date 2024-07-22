@@ -24,14 +24,15 @@ const AddTaskModal = ({ visible, onClose }) => {
 
    return (
       <Modal
-         visible={visible}
+         // visible={visible}
+         open={visible}
          onCancel={onClose}
          footer={null}
          width={1300}
          centered
       >
-         <div style={{ display: 'flex', flexDirection: 'row', height: '100%' }}>
-            <div style={{ flex: 1, padding: '20px' }}>
+         <div className='d-flex flex-wrap' style={{ height: '100%' }}>
+            <div className="col-12 col-lg-6" style={{ padding: '20px', borderRight : '1px solid #E2E8F0' }}>
                <Title level={2} className='mb-2'>Acne Inc. Tasks ✨</Title>
                <Text>In → Acne Inc. Project</Text>
                <TextArea placeholder="Write a description..." rows={5} style={{ marginTop: 20 }} />
@@ -197,9 +198,9 @@ const AddTaskModal = ({ visible, onClose }) => {
                </div>
             </div>
 
-            <Divider type="vertical" style={{ height: 'auto' }} />
+            {/* <Divider type="vertical" style={{ height: 'auto' }} /> */}
 
-            <div style={{ flex: 1, padding: '20px' }}>
+            <div className="col-12 col-lg-6" style={{ flex: 1, padding: '20px' }}>
                <Tabs activeKey="1" items={[
                   {
                      key: '1',
